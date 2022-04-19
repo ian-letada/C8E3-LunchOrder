@@ -1,0 +1,2 @@
+# C8E3-LunchOrder
+Create a LunchOrder application that prompts the user for the number of hamburgers, salads, french  fries, and sodas and then displays the total for the order. The LunchOrder application should include  a Food object with a constructor that accepts the price, fat, carbs, and fiber for an item. Food methods  should return the price of the item and return the fat, carbohydrates, and fiber.

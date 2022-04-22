@@ -37,18 +37,10 @@ public class LunchOrder {
 		System.out.println("\n");
 
 		BigDecimal total = BigDecimal.valueOf(0);
-		for (int i = 0; i < hamburgerQuantity; i++) {
-			total = total.add(hamburger.getPrice());
-		}
-		for (int i = 0; i < saladQuantity; i++) {
-			total = total.add(salad.getPrice());
-		}
-		for (int i = 0; i < frenchFriesQuantity; i++) {
-			total = total.add(frenchFries.getPrice());
-		}
-		for (int i = 0; i < sodaQuantity; i++) {
-			total = total.add(soda.getPrice());
-		}
+		total = total.add(hamburger.getPrice().multiply(BigDecimal.valueOf(hamburgerQuantity)));
+		total = total.add(salad.getPrice().multiply(BigDecimal.valueOf(saladQuantity)));
+		total = total.add(frenchFries.getPrice().multiply(BigDecimal.valueOf(frenchFriesQuantity)));
+		total = total.add(soda.getPrice().multiply(BigDecimal.valueOf(sodaQuantity)));
 
 		System.out.format("Your order comes to $%.2f", total);
 	}

@@ -14,27 +14,23 @@ public class LunchOrder {
 
 		System.out.print("Enter number of hamburgers: ");
 		int hamburgerQuantity = scan.nextInt();
-		System.out.format("Each hamburger has %.1fg of fat, %.1fg of carbs and %.1fg of fiber",
+		System.out.format("Each hamburger has %.1fg of fat, %.1fg of carbs and %.1fg of fiber%n",
 				hamburger.getFat(), hamburger.getCarbs(), hamburger.getFiber());
-		System.out.println("\n");
 
 		System.out.print("Enter number of salads: ");
 		int saladQuantity = scan.nextInt();
-		System.out.format("Each salad has %.1fg of fat, %.1fg of carbs and %.1fg of fiber", salad.getFat(),
+		System.out.format("Each salad has %.1fg of fat, %.1fg of carbs and %.1fg of fiber%n", salad.getFat(),
 				salad.getCarbs(), salad.getFiber());
-		System.out.println("\n");
 
 		System.out.print("Enter number of french fries: ");
 		int frenchFriesQuantity = scan.nextInt();
-		System.out.format("French fries have %.1fg of fat, %.1fg of carbs and %.1fg of fiber",
+		System.out.format("French fries have %.1fg of fat, %.1fg of carbs and %.1fg of fiber%n",
 				frenchFries.getFat(), frenchFries.getCarbs(), frenchFries.getFiber());
-		System.out.println("\n");
 
 		System.out.print("Enter number of soda: ");
 		int sodaQuantity = scan.nextInt();
-		System.out.format("Each soda has %.1fg of fat, %.1fg of carbs and %.1fg of fiber", soda.getFat(),
+		System.out.format("Each soda has %.1fg of fat, %.1fg of carbs and %.1fg of fiber%n", soda.getFat(),
 				soda.getCarbs(), soda.getFiber());
-		System.out.println("\n");
 
 		BigDecimal total = BigDecimal.valueOf(0);
 		total = total.add(hamburger.getPrice().multiply(BigDecimal.valueOf(hamburgerQuantity)));
